@@ -15,11 +15,11 @@
 
 <div v-click class="card-amber">
   <div class="flex items-center gap-2 mb-2"><carbon:warning-alt class="text-amber-700 dark:text-amber-300" /><b class="text-amber-800 dark:text-amber-200">Still required — a naive agent fails all four</b></div>
-  <div class="text-sm leading-loose">
-    <div class="flex items-center gap-2"><carbon:close class="text-red-600 dark:text-red-400" /> deterministic — it takes a <i>different path</i> every run</div>
-    <div class="flex items-center gap-2"><carbon:close class="text-red-600 dark:text-red-400" /> affordable — tokens on <i>every</i> click of <i>every</i> run</div>
-    <div class="flex items-center gap-2"><carbon:close class="text-red-600 dark:text-red-400" /> fast — a model round-trip per action</div>
-    <div class="flex items-center gap-2"><carbon:close class="text-red-600 dark:text-red-400" /> auditable — a chat log is not a trace</div>
+  <div class="text-sm space-y-2">
+    <div class="flex items-start gap-2"><carbon:close class="text-red-600 dark:text-red-400 shrink-0 mt-1" /><span><b>not deterministic</b> — it takes a <i>different path</i> every run</span></div>
+    <div class="flex items-start gap-2"><carbon:close class="text-red-600 dark:text-red-400 shrink-0 mt-1" /><span><b>not affordable</b> — it spends tokens on <i>every</i> click of <i>every</i> run</span></div>
+    <div class="flex items-start gap-2"><carbon:close class="text-red-600 dark:text-red-400 shrink-0 mt-1" /><span><b>not fast</b> — a model round-trip per action</span></div>
+    <div class="flex items-start gap-2"><carbon:close class="text-red-600 dark:text-red-400 shrink-0 mt-1" /><span><b>not auditable</b> — a chat log is not a trace</span></div>
   </div>
 </div>
 
