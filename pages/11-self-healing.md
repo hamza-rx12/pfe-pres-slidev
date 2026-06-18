@@ -1,4 +1,4 @@
-<div class="kicker">Self-healing</div>
+<div class="kicker">Inside brag <span class="op50">· Self-healing</span></div>
 
 ## UI drift is not an incident
 

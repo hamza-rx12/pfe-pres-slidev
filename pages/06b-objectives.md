@@ -1,4 +1,4 @@
-<div class="kicker">Objectives</div>
+<div class="kicker">The problem <span class="op50">· The objectives</span></div>
 
 ## Five commitments, made up front
 

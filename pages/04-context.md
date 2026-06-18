@@ -1,55 +1,36 @@
-<div class="kicker">Context</div>
+<div class="kicker">The problem <span class="op50">· The engagement</span></div>
 
-## One internship, inside a real migration
+## One layer of a three-layer migration
 
-<div class="grid grid-cols-[1fr_1.25fr] gap-5 mt-5">
-
-<div class="card">
-  <div class="flex items-center justify-between mb-2">
-    <b>Neo Tech IT</b>
-    <span class="text-xs op60">ESN · Casablanca · est. 2015</span>
-  </div>
-  <div class="text-sm op80 leading-relaxed">
-    Digital services company — consulting, skills delegation, end-to-end delivery.
-    I worked in the <b>AI unit</b> of the Technical division.
-  </div>
-  <div class="grid grid-cols-4 gap-2 mt-4 text-center">
-    <div><div class="text-lg font-extrabold text-teal-700 dark:text-teal-300">40M+</div><div class="text-[0.6rem] op60">revenue</div></div>
-    <div><div class="text-lg font-extrabold text-teal-700 dark:text-teal-300">150+</div><div class="text-[0.6rem] op60">projects</div></div>
-    <div><div class="text-lg font-extrabold text-teal-700 dark:text-teal-300">30+</div><div class="text-[0.6rem] op60">clients</div></div>
-    <div><div class="text-lg font-extrabold text-teal-700 dark:text-teal-300">60+</div><div class="text-[0.6rem] op60">engineers</div></div>
-  </div>
-  <div class="text-xs op60 mt-3">Long-standing partner of <b>Orange</b> — where this engagement was born.</div>
+<div class="text-sm op80 mt-4 max-w-4xl">
+  Orange runs <b>50+ business processes</b> on UiPath. Neo Tech IT's answer isn't to patch it —
+  it's to replace it with autonomous AI agents, split across <b>three layers</b>, one engineer owning each.
 </div>
 
-<div>
-  <div class="text-sm op80 mb-3">Orange wants out of UiPath. The migration has <b>three layers</b> — three agents:</div>
-  <div v-click class="card mb-2 py-2.5 opacity-60">
-    <div class="flex items-center gap-3">
-      <span class="text-xs font-mono op60 w-18">Business</span>
-      <span class="text-sm">an agent that triages &amp; resolves error e-mails</span>
-    </div>
+<div class="grid grid-cols-3 gap-4 mt-6 items-stretch">
+  <div v-click class="card opacity-70 flex flex-col">
+    <div class="font-mono text-xs op55 mb-1.5">Business layer</div>
+    <div class="text-sm">an agent that triages &amp; resolves business- and technical-error e-mails</div>
   </div>
-  <div v-click class="card-amber mb-2 py-2.5">
-    <div class="flex items-center gap-3">
-      <span class="text-xs font-mono text-amber-700 dark:text-amber-300 w-18">App</span>
-      <span class="text-sm"><b>the browser-driving execution engine — this project</b></span>
-    </div>
-    <div class="text-xs op70 mt-1.5 ml-21">owned end-to-end: architecture → working prototype · Feb → Jul 2026</div>
+  <div v-click class="card-amber flex flex-col">
+    <div class="font-mono text-xs text-amber-700 dark:text-amber-300 mb-1.5">App layer · this project</div>
+    <div class="text-sm"><b>the browser-driving execution engine</b> — the direct replacement for UiPath</div>
   </div>
-  <div v-click class="card py-2.5 opacity-60">
-    <div class="flex items-center gap-3">
-      <span class="text-xs font-mono op60 w-18">OS</span>
-      <span class="text-sm">a system agent for Windows-level remediation</span>
-    </div>
+  <div v-click class="card opacity-70 flex flex-col">
+    <div class="font-mono text-xs op55 mb-1.5">OS layer</div>
+    <div class="text-sm">a system agent for Windows-level remediation</div>
   </div>
 </div>
 
+<div v-click class="mt-6 text-center text-base">
+  I owned the <b class="text-amber-600 dark:text-amber-400">App Layer</b> end-to-end —
+  <span class="op80">architecture through to a working prototype, Feb → Jul 2026.</span>
 </div>
 
 <!--
-~1 min. Company: one breath — established ESN, AI unit, serves Orange.
-The 3 layers: each engineer owned one layer end to end; mine is the App Layer —
-the direct UiPath replacement, the execution engine the other layers call.
-"End-to-end means I made the design decisions, not just the code."
+~1 min. The migration was deliberately NOT one monolith — three layers, each its own
+agent, each owned by one engineer. Mine is the App Layer: the most direct UiPath
+replacement (web-driving execution). "End-to-end means I made the design decisions,
+not just the code." Business and OS ran in parallel by colleagues; they only bound my
+scope (the Business Layer is an upstream caller that hands work to mine).
 -->

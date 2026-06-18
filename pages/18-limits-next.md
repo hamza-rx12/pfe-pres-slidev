@@ -1,4 +1,4 @@
-<div class="kicker">Lucidity</div>
+<div class="kicker">What's next <span class="op50">· Limits &amp; roadmap</span></div>
 
 ## Honest limits, concrete next steps
 

@@ -15,7 +15,7 @@ transition: fade
     Lose one machine → <span class="text-amber-600 dark:text-amber-400">its processes stop.</span>
   </p>
   <p v-click class="text-xl !mt-10 op90">
-    My project: replace them with something that <b class="text-teal-700 dark:text-teal-300">adapts</b>.
+    The mission: replace them with something that <b class="text-teal-700 dark:text-teal-300">adapts</b>.
   </p>
 </div>
 

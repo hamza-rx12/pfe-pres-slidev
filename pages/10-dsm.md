@@ -1,4 +1,4 @@
-<div class="kicker">Self-extension · the Domain Skill Manifest (DSM)</div>
+<div class="kicker">Inside brag <span class="op50">· Self-extension (DSM)</span></div>
 
 ## After the win, it writes the playbook
 

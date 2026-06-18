@@ -1,4 +1,4 @@
-<div class="kicker">Measured</div>
+<div class="kicker">Results <span class="op50">· Measured on live sites</span></div>
 
 ## Replay vs agent — on live sites
 

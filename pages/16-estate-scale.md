@@ -1,4 +1,4 @@
-<div class="kicker">At estate scale</div>
+<div class="kicker">Results <span class="op50">· At estate scale</span></div>
 
 ## From a dollar a run… to a cent
 

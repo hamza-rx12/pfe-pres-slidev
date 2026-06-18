@@ -1,4 +1,4 @@
-<div class="kicker">The turning point</div>
+<div class="kicker">The problem <span class="op50">· The turning point</span></div>
 
 ## LLMs changed what's <i>possible</i> — not what's <i>required</i>
 

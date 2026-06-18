@@ -1,4 +1,4 @@
-<div class="kicker">Execution</div>
+<div class="kicker">What's next <span class="op50">· Delivered</span></div>
 
 ## Shipped in slices, never broken
 

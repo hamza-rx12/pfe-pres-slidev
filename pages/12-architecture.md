@@ -1,4 +1,4 @@
-<div class="kicker">Under the hood</div>
+<div class="kicker">Inside brag <span class="op50">· Architecture</span></div>
 
 ## Boring architecture, on purpose
 

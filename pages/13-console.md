@@ -1,4 +1,4 @@
-<div class="kicker">Observability</div>
+<div class="kicker">Inside brag <span class="op50">· Observability</span></div>
 
 ## Every run, watchable live
 

@@ -1,4 +1,4 @@
-<div class="kicker">Perception</div>
+<div class="kicker">Inside brag <span class="op50">· Perception</span></div>
 
 ## It reads what a screen reader reads
 

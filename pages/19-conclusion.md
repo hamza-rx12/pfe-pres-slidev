@@ -1,4 +1,4 @@
-<div class="kicker">Conclusion</div>
+<div class="kicker">What's next <span class="op50">· In closing</span></div>
 
 ## What this work shows
 

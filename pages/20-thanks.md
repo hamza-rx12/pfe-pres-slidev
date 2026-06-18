@@ -22,5 +22,5 @@ transition: fade
 Land the recap chips. The joke is behind a click — make it a deliberate decision:
 read the room first, and only click if the defense has been warm. If formal, skip
 the click and use the straight close: "Thank you — I'm happy to take your questions."
-Backup slides follow for Q&A.
 -->
+

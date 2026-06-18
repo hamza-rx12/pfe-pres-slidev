@@ -4,6 +4,7 @@
 #  Alaoui Mhamdi Hamza · ENSAH · 2025/2026
 #
 #  One slide per file under ./pages — edit there.
+#  Section divider slides are inline below (SectionDivider component).
 #  Palette: amber = agent path · teal = replay path.
 # ============================================================
 theme: default
@@ -40,6 +41,22 @@ src: ./pages/03-roadmap.md
 ---
 
 ---
+layout: center
+---
+
+<SectionDivider :n="1" title="The company" sub="Neo Tech IT" />
+
+---
+src: ./pages/03b-company.md
+---
+
+---
+layout: center
+---
+
+<SectionDivider :n="2" title="The problem" sub="why RPA hit a wall" />
+
+---
 src: ./pages/04-context.md
 ---
 
@@ -56,8 +73,20 @@ src: ./pages/06b-objectives.md
 ---
 
 ---
+layout: center
+---
+
+<SectionDivider :n="3" title="The idea" sub="learn once, replay forever" />
+
+---
 src: ./pages/07-idea-two-paths.md
 ---
+
+---
+layout: center
+---
+
+<SectionDivider :n="4" title="Inside brag" sub="perception · budgets · skills" />
 
 ---
 src: ./pages/08-perception.md
@@ -84,6 +113,12 @@ src: ./pages/13-console.md
 ---
 
 ---
+layout: center
+---
+
+<SectionDivider :n="5" title="Results" sub="what works, and what it costs" />
+
+---
 src: ./pages/14-one-task-twice.md
 ---
 
@@ -94,6 +129,12 @@ src: ./pages/15-results.md
 ---
 src: ./pages/16-estate-scale.md
 ---
+
+---
+layout: center
+---
+
+<SectionDivider :n="6" title="What's next" sub="limits & roadmap" />
 
 ---
 src: ./pages/17-execution.md
@@ -109,32 +150,4 @@ src: ./pages/19-conclusion.md
 
 ---
 src: ./pages/20-thanks.md
----
-
----
-src: ./pages/21-appendix.md
----
-
----
-src: ./pages/22-backup-replay-cost.md
----
-
----
-src: ./pages/23-backup-budgets.md
----
-
----
-src: ./pages/24-backup-cache.md
----
-
----
-src: ./pages/25-backup-trace.md
----
-
----
-src: ./pages/26-backup-discipline.md
----
-
----
-src: ./pages/27-backup-positioning.md
 ---

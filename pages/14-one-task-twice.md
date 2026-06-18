@@ -1,4 +1,4 @@
-<div class="kicker">Proof</div>
+<div class="kicker">Results <span class="op50">· One task, twice</span></div>
 
 ## The same task, twice
 
