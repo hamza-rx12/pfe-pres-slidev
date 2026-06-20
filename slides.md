@@ -151,3 +151,7 @@ src: ./pages/19-conclusion.md
 ---
 src: ./pages/20-thanks.md
 ---
+
+---
+src: ./pages/01-cover.md
+---
