@@ -6,22 +6,22 @@ import { useSlideContext } from '@slidev/client'
 const stops = [
   { icon: 'i-carbon-enterprise', title: 'The company', sub: 'Neo Tech IT',
     stat: 'the App Layer, end-to-end',
-    detail: 'The company, the team, and where my work fit in.' },
+    detail: 'The host company and its AI unit, how the team worked, and the one layer of a larger migration I owned end-to-end.' },
   { icon: 'i-carbon-warning-alt', title: 'The problem', sub: 'why UiPath had to go',
     stat: 'brittle, and can\'t scale',
-    detail: 'Why the old rule-based automation had to be replaced.' },
+    detail: 'Why rule-based automation hit a wall — too rigid to change, too costly to scale — and why a raw AI agent isn\'t the fix on its own.' },
   { icon: 'i-carbon-idea', title: 'The idea', sub: 'learn once, replay forever',
     stat: 'adaptive, yet deterministic',
-    detail: 'The single insight the whole design turns on.' },
+    detail: 'How I got from a costly agent to something affordable: solve a new task once, then replay it — an agent\'s adaptability with RPA\'s economics.' },
   { icon: 'i-carbon-bot', title: 'How it works', sub: 'perception · agent · skills',
     stat: 'it learns, and heals itself',
-    detail: 'A look under the hood at how the system runs.' },
+    detail: 'Under the hood: how it reads a page, stays on a strict budget, turns a success into a reusable skill, heals itself, and scales.' },
   { icon: 'i-carbon-chart-line-data', title: 'Results', sub: 'what it does, what it saves',
     stat: 'far cheaper, just as reliable',
-    detail: 'What it does in practice — and what it saves.' },
+    detail: 'Measured on live sites and projected to the whole estate — the cost and speed it saves, and the commitments it delivered.' },
   { icon: 'i-carbon-rocket', title: "What's next", sub: 'limits & roadmap',
     stat: 'bounded, with a clear path',
-    detail: 'The honest limits, and where it goes next.' },
+    detail: 'The limits I\'m honest about, the concrete next steps, and what the whole project shows.' },
 ]
 
 const { $clicks } = useSlideContext()
