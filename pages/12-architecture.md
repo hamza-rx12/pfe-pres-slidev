@@ -7,39 +7,39 @@
   <div class="grid grid-cols-[1.7fr_1fr] gap-3 items-stretch"
     v-motion :initial="{ opacity: 0, y: -6 }" :enter="{ opacity: 1, y: 0, transition: { delay: 200 } }">
     <div class="anode">
-      <div class="anode-tag">control plane <span class="op50">· callers reach it over A2A</span></div>
+      <div class="anode-tag">Control plane <span class="op50">· callers come in over A2A</span></div>
       <div class="anode-h">brag-api</div>
-      <div class="anode-s">stateless — accepts and routes work, runs no jobs of its own</div>
+      <div class="anode-s">stateless — takes work, runs nothing itself</div>
     </div>
     <div class="anode anode-ui">
-      <div class="anode-tag">observability</div>
+      <div class="anode-tag">Observability</div>
       <div class="anode-h">brag-ui</div>
-      <div class="anode-s">operator console · admin surface</div>
+      <div class="anode-s">operator console</div>
     </div>
   </div>
 
-  <div class="aflow"><span>publish&nbsp;▾</span><span class="op30">|</span><span>▴&nbsp;events</span></div>
+  <div class="aflow">work ↓ <span class="op30">·</span> ↑ events</div>
 
   <div class="backbone"
     v-motion :initial="{ opacity: 0, scale: 0.97 }" :enter="{ opacity: 1, scale: 1, transition: { delay: 380 } }">
     <div class="bb-label">the only thing both sides touch</div>
-    <div class="bb-row"><b>NATS JetStream</b><span>durable work queue + live event bus</span></div>
-    <div class="bb-row"><b>PostgreSQL</b><span>tasks · traces · skills · pricing — single source of truth</span></div>
+    <div class="bb-row"><b>NATS JetStream</b><span>work queue + live events</span></div>
+    <div class="bb-row"><b>PostgreSQL</b><span>the single source of truth — tasks, traces, skills</span></div>
   </div>
 
-  <div class="aflow"><span>claim&nbsp;▾</span><span class="op30">|</span><span>▴&nbsp;read / write</span></div>
+  <div class="aflow">pull ↓ <span class="op30">·</span> ↑ results</div>
 
   <div v-motion :initial="{ opacity: 0, y: 6 }" :enter="{ opacity: 1, y: 0, transition: { delay: 560 } }">
     <div class="anode anode-worker">
-      <div class="anode-tag">the tier that scales</div>
+      <div class="anode-tag">The tier that scales</div>
       <div class="anode-h">brag-worker <span class="op60 font-normal">× N</span></div>
-      <div class="anode-s">browser pool · agent loop · both execution paths</div>
+      <div class="anode-s">browser + agent loop · runs both paths</div>
     </div>
   </div>
 </div>
 
 <div class="text-center text-sm mt-4" v-click>
-  Add capacity with <span class="font-mono">kubectl scale</span> — not a new licensed machine. Workers hold <b>no task state</b>; a crash just redelivers the work.
+  Workers hold no state — add capacity with <span class="font-mono">kubectl scale</span>, never a licensed machine.
 </div>
 
 <div class="flex items-center justify-center gap-1.5 flex-wrap mt-3" v-click>
@@ -73,7 +73,7 @@ html.dark .anode { border-color: rgba(255, 255, 255, 0.1); background: rgba(255,
   margin-bottom: 0.2rem;
 }
 .anode-h { font-weight: 800; font-size: 1rem; line-height: 1.1; }
-.anode-s { font-size: 0.72rem; opacity: 0.62; margin-top: 0.15rem; }
+.anode-s { font-size: 0.74rem; opacity: 0.62; margin-top: 0.15rem; }
 .anode-ui { border-color: rgba(13, 148, 136, 0.4); background: linear-gradient(180deg, rgba(13,148,136,0.07), rgba(13,148,136,0.02)); }
 html.dark .anode-ui { border-color: rgba(45, 212, 191, 0.36); }
 .anode-worker {
@@ -86,15 +86,12 @@ html.dark .anode-worker {
   box-shadow: inset 0 0 0 1px rgba(245, 158, 11, 0.3), 0 12px 30px -16px rgba(245, 158, 11, 0.4);
 }
 .aflow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
+  text-align: center;
   font-family: var(--slidev-code-font-family, monospace);
-  font-size: 0.62rem;
+  font-size: 0.66rem;
   font-weight: 600;
-  opacity: 0.55;
-  padding: 0.3rem 0;
+  opacity: 0.5;
+  padding: 0.32rem 0;
 }
 .backbone {
   border-radius: 0.8rem;
@@ -136,10 +133,9 @@ html.dark .tlogo { border-color: transparent; }
 </style>
 
 <!--
-~1 min. The one architectural idea worth defending: the control plane (brag-api) and the
-worker tier never talk to each other. They meet only at the backbone — NATS for work and
-events, PostgreSQL as the single source of truth. That decoupling is exactly what lets the
-worker tier scale to N identical copies: capacity is kubectl scale, not a new licensed
-machine — the precise thing UiPath couldn't do. A2A in, operator console on the admin side.
-Stack is proven, on purpose: the innovation budget went to the two-path model.
+~1 min. The one architectural idea worth defending: the control plane and the worker tier
+never talk to each other. They meet only at the backbone — NATS for work and events,
+PostgreSQL as the single source of truth. That decoupling is exactly what lets the worker
+tier scale to N identical copies: capacity is kubectl scale, not a new licensed machine — the
+thing UiPath couldn't do. Stack is proven on purpose; the innovation went into the two paths.
 -->
