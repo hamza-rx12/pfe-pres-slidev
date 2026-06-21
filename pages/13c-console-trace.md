@@ -7,20 +7,16 @@
   <img src="../assets/screenshots/request-trace-detail.png" class="shot console-shot" alt="per-run trace detail" />
 </div>
 
-<div class="mt-4 flex flex-wrap gap-2 justify-center">
-  <span class="chip">each tool call &amp; observation</span>
-  <span class="chip">tokens</span>
-  <span class="chip chip-amber">per-run cost</span>
-  <span class="text-xs op55 ml-1">— open any past request to its complete, saved trace</span>
+<div class="mt-4 text-center text-sm op70">
+  Open any past run to its full trace — <b>every step, the tokens, and the cost</b>. That's what makes it auditable.
 </div>
 
 <style scoped>
-.console-shot { max-height: 340px; width: auto; max-width: 90%; }
+.console-shot { max-height: 350px; width: auto; max-width: 92%; }
 </style>
 
 <!--
-~0:30. Every run persists a full trace: the path, each tool call and observation, the
-token usage, and a computed monetary cost. Open any past request and read exactly what it
-did and what it cost — that is what makes the agent path auditable, the guarantee a raw
-chat log can't give.
+~0:30. Every run persists a complete trace: the path, each tool call and observation, token
+usage, and a computed cost. Open any request and read exactly what it did and what it cost —
+the audit trail a raw chat log can't give.
 -->

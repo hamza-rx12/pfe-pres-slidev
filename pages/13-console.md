@@ -7,20 +7,16 @@
   <img src="../assets/screenshots/dashboard-dark.png" class="shot console-shot" alt="brag-ui dashboard" />
 </div>
 
-<div class="mt-4 flex flex-wrap gap-2 justify-center">
-  <span class="chip">request volume</span>
-  <span class="chip">latency</span>
-  <span class="chip">success rate</span>
-  <span class="chip">model spend</span>
-  <span class="text-xs op55 ml-1">— across the whole worker fleet · <span class="font-mono">brag-ui</span></span>
+<div class="mt-4 text-center text-sm op70">
+  Volume, latency, success rate, and <b>real model spend</b> — the whole worker fleet on one screen.
 </div>
 
 <style scoped>
-.console-shot { max-height: 340px; width: auto; max-width: 90%; }
+.console-shot { max-height: 350px; width: auto; max-width: 92%; }
 </style>
 
 <!--
-~0:30. brag-ui, the operator console. "An agent you can't watch is an agent you can't trust
-in production." The dashboard is the front door: volume, latency, success rate, and real
-model spend across every worker — one screen, no database session.
+~0:30. brag-ui, the operator console. "An agent you can't watch is an agent you can't trust in
+production." The dashboard is the front door — volume, latency, success rate, real spend across
+every worker, no database session.
 -->
