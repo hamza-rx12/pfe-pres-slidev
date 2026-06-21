@@ -87,6 +87,10 @@ src: ./pages/07-idea-two-paths.md
 ---
 
 ---
+src: ./pages/07b-dsm-format.md
+---
+
+---
 layout: center
 ---
 
