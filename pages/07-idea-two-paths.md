@@ -2,57 +2,73 @@
 
 ## <span class="brag">brag</span> — learn once, replay forever
 
-<div class="mt-3 flex items-center justify-center gap-3">
-  <div class="pill-task">web.task · "order 3 items and check out on the store"</div>
+<div class="mt-4 flex items-center justify-center gap-2.5">
+  <div class="pill-task">"order 3 items and check out"</div>
   <carbon:arrow-right class="flow-arrow" />
-  <div class="card text-center !py-2 !px-4">
-    <div class="text-sm font-bold">intent router</div>
-    <div class="text-[0.65rem] op60">one cheap classifier call</div>
-  </div>
+  <div class="router"><carbon:branch /> <span>Seen this task before?</span></div>
 </div>
 
-<div class="grid grid-cols-2 gap-4 mt-4">
+<div class="grid grid-cols-2 gap-4 mt-5">
   <div v-click class="card-amber">
-    <div class="flex items-center gap-2 mb-1.5">
-      <carbon:bot class="text-amber-600 dark:text-amber-400" />
-      <b class="text-amber-700 dark:text-amber-300">no skill matches → AGENT PATH</b>
-    </div>
-    <div class="text-sm op85 leading-relaxed">
-      An LLM tool-loop: <b>perceive → decide → act</b>, under hard budgets.<br />
-      Solves the task like a smart intern — <b>once</b>.
-    </div>
-    <div v-click class="mt-2.5 text-sm border-t border-amber-600/40 dark:border-amber-400/30 pt-2">
-      on success → <span class="font-mono text-amber-700 dark:text-amber-300">propose_skill</span> —
-      it <b>writes down the recipe</b> it just discovered
-    </div>
+    <div class="path-head"><carbon:bot class="text-amber-600 dark:text-amber-400" /> <b class="text-amber-700 dark:text-amber-300">Agent path</b> <span class="op50 text-sm font-normal">· new task</span></div>
+    <div class="text-sm op85 mt-2">Figures it out step by step, under budget — then <b>writes down the recipe</b>.</div>
+    <div class="ptag tag-amber">adaptive · learns once</div>
   </div>
   <div v-click class="card-teal">
-    <div class="flex items-center gap-2 mb-1.5">
-      <carbon:repeat class="text-teal-700 dark:text-teal-300" />
-      <b class="text-teal-800 dark:text-teal-200">skill matches → REPLAY PATH</b>
-    </div>
-    <div class="text-sm op85 leading-relaxed">
-      Execute the recorded steps. <b>Zero LLM calls in the navigation loop.</b><br />
-      Deterministic, auditable — same steps, every time.
-    </div>
-    <div class="mt-2.5 text-sm border-t border-teal-600/40 dark:border-teal-400/30 pt-2">
-      ~<b class="text-teal-700 dark:text-teal-300">12× cheaper</b> · <b class="text-teal-700 dark:text-teal-300">4× faster</b> than the agent path
-    </div>
+    <div class="path-head"><carbon:repeat class="text-teal-700 dark:text-teal-300" /> <b class="text-teal-800 dark:text-teal-200">Replay path</b> <span class="op50 text-sm font-normal">· seen it before</span></div>
+    <div class="text-sm op85 mt-2">Runs the saved steps — <b>no model in the loop</b>, same result every time.</div>
+    <div class="ptag tag-teal">12× cheaper · 4× faster</div>
   </div>
 </div>
 
-<div v-click class="mt-4 card !py-2.5 text-center text-sm">
-  <carbon:renew class="inline text-teal-700 dark:text-teal-300 mr-1" />
-  Every agent success makes the system <b class="text-teal-700 dark:text-teal-300">cheaper</b> ·
-  every replay failure (3 strikes) sends it <b class="text-amber-700 dark:text-amber-300">back to school</b>
+<div v-click class="mt-5 text-center text-sm">
+  <carbon:renew class="inline op60 mr-1" />
+  Every success makes it <b class="text-teal-700 dark:text-teal-300">cheaper</b> · when a redesign breaks replay, it <b class="text-amber-700 dark:text-amber-300">re-learns on its own</b>.
 </div>
 
+<style scoped>
+.router {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.42rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid rgba(20, 40, 90, 0.2);
+  background: rgba(255, 255, 255, 0.7);
+}
+html.dark .router {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.05);
+}
+.path-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.05rem;
+}
+.ptag {
+  display: inline-block;
+  margin-top: 0.7rem;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+}
+.tag-amber { color: #b45309; border: 1px solid rgba(217, 119, 6, 0.5); }
+html.dark .tag-amber { color: #fcd34d; border-color: rgba(245, 158, 11, 0.5); }
+.tag-teal { color: #0f766e; border: 1px solid rgba(13, 148, 136, 0.5); }
+html.dark .tag-teal { color: #7ff0e0; border-color: rgba(45, 212, 191, 0.5); }
+</style>
+
 <!--
-THE slide. ~2 min. Tell it as a story:
-"A task arrives in natural language. One cheap call asks: have we seen this kind of task before?"
-[click] "Never seen → the agent path. The LLM explores like an intern would."
-[click] "And when it succeeds, it does what a good intern does: writes the procedure down."
-[click] "Seen before → replay. No model in the loop. RPA-grade determinism — but the recipe wrote itself."
-[click] "The system gets cheaper with use, and when a site changes, it re-learns on its own."
-This one slide carries the whole thesis.
+THE slide. ~2 min. A task arrives; one cheap classifier call asks "seen this before?".
+[click] No → the agent path: it reasons step by step under budget, and on success writes
+the recipe down. [click] Yes → the replay path: the saved steps run with no model at all —
+12× cheaper, 4× faster, identical every time. [click] So every success makes the system
+cheaper, and when a redesign breaks a replay, it re-learns on its own. This one slide is the
+whole thesis.
 -->
