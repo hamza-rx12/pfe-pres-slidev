@@ -2,33 +2,78 @@
 
 ## Honest limits, concrete next steps
 
-<div class="grid grid-cols-2 gap-5 mt-5">
-
-<div v-click>
-  <div class="text-sm font-bold mb-2 text-amber-700 dark:text-amber-300">What it isn't (yet)</div>
-  <div class="text-sm space-y-1.5 op85">
-    <div><carbon:warning-alt class="inline text-amber-600 dark:text-amber-400 mr-1.5" />heavy redesigns still cost one agent re-learn run</div>
-    <div><carbon:warning-alt class="inline text-amber-600 dark:text-amber-400 mr-1.5" />single LLM provider (Anthropic) — by scoped choice</div>
-    <div><carbon:warning-alt class="inline text-amber-600 dark:text-amber-400 mr-1.5" />single trust boundary — no multi-tenant admin yet</div>
-    <div><carbon:warning-alt class="inline text-amber-600 dark:text-amber-400 mr-1.5" />replay vocabulary: goto · act · extract — no wait/assert</div>
-    <div><carbon:warning-alt class="inline text-amber-600 dark:text-amber-400 mr-1.5" />numbers are preliminary until the systematic benchmark</div>
+<div class="grid grid-cols-2 gap-8 mt-6">
+  <div v-click>
+    <div class="col-head head-amber"><carbon:warning-alt /> What it isn't — yet</div>
+    <ul class="rlist rlist-amber">
+      <li>a heavy redesign costs one re-learn run</li>
+      <li>one LLM provider — Anthropic, by choice</li>
+      <li>single tenant — no multi-tenant admin</li>
+      <li>replay verbs: goto · act · extract — no wait / assert</li>
+      <li>numbers preliminary until the full benchmark</li>
+    </ul>
+  </div>
+  <div v-click>
+    <div class="col-head head-teal"><carbon:arrow-right /> What's next</div>
+    <ul class="rlist rlist-teal">
+      <li>operator retry workflow — the data's already in Postgres</li>
+      <li>real cluster deploy — Helm · Argo CD · Terraform</li>
+      <li>the p50 / p95 benchmark on a fixed task set</li>
+    </ul>
+    <div class="later">later — provider abstraction · OpenTelemetry · multi-tenant · demo-to-skill</div>
   </div>
 </div>
 
-<div v-click>
-  <div class="text-sm font-bold mb-2 text-teal-700 dark:text-teal-300">Next</div>
-  <div class="text-sm space-y-1.5 op85">
-    <div><carbon:arrow-right class="inline text-teal-700 dark:text-teal-300 mr-1.5" />operator retry workflow — the trace data is already in PostgreSQL</div>
-    <div><carbon:arrow-right class="inline text-teal-700 dark:text-teal-300 mr-1.5" />cluster deployment — Helm, Argo CD, Terraform</div>
-    <div><carbon:arrow-right class="inline text-teal-700 dark:text-teal-300 mr-1.5" />the p50/p95 benchmark on a fixed task set</div>
-    <div class="op60 pt-1.5 border-t border-black/10 dark:border-white/10">then: provider abstraction · OpenTelemetry GenAI export · multi-tenant surface · human-demonstration skill authoring</div>
-  </div>
-</div>
-
-</div>
+<style scoped>
+.col-head {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.7rem;
+}
+.head-amber { color: #b45309; }
+html.dark .head-amber { color: #fcd34d; }
+.head-teal { color: #0f766e; }
+html.dark .head-teal { color: #5eead4; }
+.rlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.rlist li {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 0.88rem;
+  opacity: 0.85;
+  line-height: 1.3;
+}
+.rlist li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 0.5rem;
+  height: 1.5px;
+  border-radius: 2px;
+}
+.rlist-amber li::before { background: var(--brag-amber); opacity: 0.75; }
+.rlist-teal li::before { background: var(--brag-teal); opacity: 0.8; }
+.later {
+  font-size: 0.76rem;
+  opacity: 0.58;
+  margin-top: 0.8rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid rgba(20, 40, 90, 0.1);
+}
+html.dark .later { border-color: rgba(255, 255, 255, 0.1); }
+</style>
 
 <!--
-~1 min. Naming the limits before the jury does is a strength move.
-Each limit is bounded and has a planned answer. The near-term items are scoped within
-the remaining engagement weeks; the four long-term directions are recorded as perspectives.
+~1 min. Naming the limits before the jury does is a strength. Each is bounded and has a planned
+answer. Near-term items fit the remaining weeks; the "later" line is recorded as perspectives.
 -->

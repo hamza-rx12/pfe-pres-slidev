@@ -12,8 +12,8 @@ transition: fade
     <span class="chip chip-amber !text-sm">0 LLM calls where it counts</span>
   </div>
   <div v-click class="mt-12 inline-block text-left">
-    <div class="pill-task mb-2">{ "skill": "web.task", "input": { "query": "answer the jury's questions" } }</div>
-    <div class="text-xs op60 font-mono pl-2">→ router: no matching skill — <span class="text-amber-700 dark:text-amber-300">taking the agent path…</span></div>
+    <div class="pill-task mb-2">"answer the jury's questions"</div>
+    <div class="text-xs op60 font-mono pl-2">→ router: never seen this one — <span class="text-amber-700 dark:text-amber-300">taking the agent path…</span></div>
   </div>
   <div class="mt-10 text-sm op60">Alaoui Mhamdi Hamza · ENSAH — Data Engineering · Neo Tech IT</div>
 </div>

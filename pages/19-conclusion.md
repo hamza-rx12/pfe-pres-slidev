@@ -2,25 +2,68 @@
 
 ## What this work shows
 
-<div class="mt-6 space-y-4 max-w-3xl">
-  <div v-click class="card !py-3.5 text-base">
-    <b class="text-teal-700 dark:text-teal-300">1.</b> The gap between an LLM demo and a production system <b>can be engineered closed</b> — with budgets, schemas, traces, and stateless replicas.
+<div class="mt-6 flex flex-col gap-3 max-w-3xl mx-auto">
+  <div v-click class="ccard">
+    <div class="cnum">1</div>
+    <div>
+      <div class="ch">The gap can be engineered closed</div>
+      <div class="cs">budgets, schemas, traces, stateless replicas — not a research demo</div>
+    </div>
   </div>
-  <div v-click class="card !py-3.5 text-base">
-    <b class="text-teal-700 dark:text-teal-300">2.</b> The two-path design reconciles what RPA had — determinism, low cost — with what it lacked: <b>adaptation</b>. And the system <b>improves itself with use</b>.
+  <div v-click class="ccard">
+    <div class="cnum">2</div>
+    <div>
+      <div class="ch">Cheap and deterministic — yet adaptive</div>
+      <div class="cs">the two paths reconcile them, and it improves itself with use</div>
+    </div>
   </div>
-  <div v-click class="card !py-3.5 text-base">
-    <b class="text-teal-700 dark:text-teal-300">3.</b> It's not a slideware architecture: <b>shipped end-to-end by mid-engagement</b>, running against live sites, instrumented for the proof that completes it.
+  <div v-click class="ccard">
+    <div class="cnum">3</div>
+    <div>
+      <div class="ch">It shipped, end to end</div>
+      <div class="cs">by mid-engagement, on live sites, instrumented for proof</div>
+    </div>
   </div>
 </div>
 
-<div v-click class="mt-8 text-center text-lg op85">
+<div v-click class="mt-7 text-center text-lg op85">
   The model is a tenth of the system.<br />
-  <b class="grad">The other nine tenths are engineering — and that's the part I'm defending today.</b>
+  <b class="grad">The other nine tenths are engineering — and that's what I'm defending today.</b>
 </div>
+
+<style scoped>
+.ccard {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.8rem 1.1rem;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(20, 40, 90, 0.12);
+  background: rgba(255, 255, 255, 0.5);
+}
+html.dark .ccard {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.04);
+}
+.cnum {
+  flex-shrink: 0;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--slidev-code-font-family, monospace);
+  font-weight: 800;
+  font-size: 0.85rem;
+  color: #fff;
+  background: var(--brag-teal);
+}
+.ch { font-weight: 700; font-size: 1.05rem; line-height: 1.15; }
+.cs { font-size: 0.82rem; opacity: 0.65; margin-top: 0.1rem; }
+</style>
 
 <!--
-~1 min. Slow, deliberate. Three claims, then the personal line.
-This is also a career statement: systems that combine LLM reasoning with deterministic
-execution under production constraints — that's the intersection where I want to work.
+~1 min. Slow, deliberate. Three claims, then the personal line. Also a career statement:
+LLM reasoning plus deterministic execution under production constraints — that's the
+intersection where I want to work.
 -->
