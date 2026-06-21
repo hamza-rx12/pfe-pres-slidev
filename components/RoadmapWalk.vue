@@ -6,22 +6,22 @@ import { useSlideContext } from '@slidev/client'
 const stops = [
   { icon: 'i-carbon-enterprise', title: 'The company', sub: 'Neo Tech IT',
     stat: '60+ engineers · est. 2015',
-    detail: 'A Casablanca digital-services firm (ESN) delivering for the largest organisations in Morocco — Orange among them.' },
+    detail: 'A Casablanca software firm serving Morocco\'s biggest names — Orange among them. I owned one layer of its UiPath → AI migration.' },
   { icon: 'i-carbon-warning-alt', title: 'The problem', sub: 'why UiPath had to go',
     stat: '$120–180k / year',
-    detail: 'UiPath robots licensed one per machine — and a single UI redesign breaks them.' },
+    detail: 'UiPath robots are pinned one-per-machine — costly to scale, and a single redesign breaks them.' },
   { icon: 'i-carbon-idea', title: 'The idea', sub: 'learn once, replay forever',
     stat: 'learn once · replay ∞',
-    detail: 'Solve an unknown task once with an LLM agent, then replay it deterministically — no model in the loop.' },
+    detail: 'An agent solves a new task once, then replays the recorded steps forever — no model, RPA-cheap.' },
   { icon: 'i-carbon-bot', title: 'How it works', sub: 'perception · agent · skills',
     stat: '6 tools · hard budget',
-    detail: 'It reads the page through its accessibility tree and runs inside a sealed cost / time / step envelope.' },
+    detail: 'How it reads a page by meaning, stays on a hard budget, writes its own skills, and heals itself.' },
   { icon: 'i-carbon-chart-line-data', title: 'Results', sub: 'what it does, what it saves',
     stat: '×12 cheaper · $1 → 1¢',
-    detail: 'Measured on live sites — replay against the agent path — then projected to estate scale: a dollar a run becomes a cent.' },
+    detail: 'On live sites, replay runs ~12× cheaper. At estate scale, a dollar a run becomes a cent.' },
   { icon: 'i-carbon-rocket', title: "What's next", sub: 'limits & roadmap',
     stat: 'benchmark · cluster · scale',
-    detail: 'The systematic p50/p95 benchmark, a real Kubernetes deploy, and a multi-tenant surface.' },
+    detail: 'The honest limits — then the full benchmark, a real cluster deploy, and a multi-tenant surface.' },
 ]
 
 const { $clicks } = useSlideContext()
