@@ -2,22 +2,18 @@
 
 ## Six tools, four ceilings
 
-<div class="grid grid-cols-[1.15fr_1fr] gap-5 mt-4">
+<div class="loop-row mt-5">
+  <span class="chip chip-amber">read the page</span>
+  <carbon:arrow-right class="op40" />
+  <span class="chip chip-amber">model picks a tool</span>
+  <carbon:arrow-right class="op40" />
+  <span class="chip chip-amber">browser acts</span>
+  <span class="loop-back"><carbon:renew /> repeat until <span class="font-mono">done</span></span>
+</div>
 
-<div>
-  <div class="card mb-3">
-    <div class="text-sm font-bold mb-2">The loop</div>
-    <div class="flex items-center gap-2 text-sm">
-      <span class="chip chip-amber">snapshot page</span>
-      <carbon:arrow-right class="op50" />
-      <span class="chip chip-amber">model picks a tool</span>
-      <carbon:arrow-right class="op50" />
-      <span class="chip chip-amber">browser executes</span>
-    </div>
-    <div class="text-xs op60 mt-2">…repeat until <span class="font-mono">done</span> — or until a budget says stop.</div>
-  </div>
-  <div class="text-sm op80 mb-1.5">Six tools. That's the whole surface:</div>
-  <div class="flex flex-wrap gap-1.5">
+<div class="mt-6 text-center">
+  <div class="grp-label">Six tools — the entire surface</div>
+  <div class="flex flex-wrap gap-1.5 justify-center mt-2">
     <span class="chip font-mono">goto</span>
     <span class="chip font-mono">act</span>
     <span class="chip font-mono">snapshot</span>
@@ -25,33 +21,98 @@
     <span class="chip font-mono">propose_skill</span>
     <span class="chip font-mono">done</span>
   </div>
-  <div class="text-xs op60 mt-2">a few hundred tokens of definitions — vs 25+ tools on a Playwright MCP server</div>
 </div>
 
-<div v-click class="card-amber">
-  <div class="text-sm font-bold text-amber-800 dark:text-amber-200 mb-2.5">Every run inside a sealed envelope</div>
-  <div class="text-sm space-y-1.5">
-    <div class="flex justify-between"><span><carbon:renew class="inline mr-1 op60" />iterations</span><b class="font-mono">≤ 40</b></div>
-    <div class="flex justify-between"><span><carbon:document class="inline mr-1 op60" />input tokens</span><b class="font-mono">≤ 700k</b></div>
-    <div class="flex justify-between"><span><carbon:time class="inline mr-1 op60" />wall-clock</span><b class="font-mono">≤ 300 s</b></div>
-    <div class="flex justify-between"><span><carbon:currency-dollar class="inline mr-1 op60" />cost</span><b class="font-mono">≤ $0.80</b></div>
+<div class="mt-6" v-click>
+  <div class="grp-label text-center">Four ceilings — every run is capped</div>
+  <div class="grid grid-cols-4 gap-3 mt-2.5">
+    <div class="ccard">
+      <div class="cic"><carbon:renew /></div>
+      <div class="cval">≤ 40</div>
+      <div class="clbl">steps</div>
+    </div>
+    <div class="ccard">
+      <div class="cic"><carbon:time /></div>
+      <div class="cval">≤ 300s</div>
+      <div class="clbl">wall-clock</div>
+    </div>
+    <div class="ccard">
+      <div class="cic"><carbon:document /></div>
+      <div class="cval">≤ 700k</div>
+      <div class="clbl">input tokens</div>
+    </div>
+    <div class="ccard">
+      <div class="cic"><carbon:currency-dollar /></div>
+      <div class="cval">≤ $0.80</div>
+      <div class="clbl">cost</div>
+    </div>
   </div>
-  <div class="text-xs op70 mt-3 border-t border-amber-600/40 dark:border-amber-400/30 pt-2">
-    checked <b>before every tool dispatch</b> · hit a ceiling → clean stop + full trace
+  <div class="text-sm op65 mt-3.5 text-center">
+    Checked before every step — hit one and it stops clean, with a full trace.
   </div>
 </div>
 
-</div>
-
-<div v-click class="mt-4 text-sm op75 text-center">
-  + layered prompt caching: the stable prompt is ~free — <b class="text-teal-700 dark:text-teal-300">50–93%</b> of context tokens served from cache on real runs
-</div>
+<style scoped>
+.loop-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.loop-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.78rem;
+  opacity: 0.6;
+  margin-left: 0.3rem;
+}
+.grp-label {
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+.ccard {
+  text-align: center;
+  padding: 0.85rem 0.6rem;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(217, 119, 6, 0.3);
+  background: rgba(217, 119, 6, 0.05);
+}
+html.dark .ccard {
+  border-color: rgba(245, 158, 11, 0.3);
+  background: rgba(245, 158, 11, 0.06);
+}
+.cic {
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: 0 auto 0.45rem;
+  border-radius: 0.55rem;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  color: var(--brag-amber);
+  background: rgba(217, 119, 6, 0.1);
+}
+html.dark .cic { background: rgba(245, 158, 11, 0.13); }
+.cval {
+  font-family: var(--slidev-code-font-family, monospace);
+  font-weight: 800;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #b45309;
+}
+html.dark .cval { color: #fcd34d; }
+.clbl { font-size: 0.72rem; opacity: 0.6; margin-top: 0.3rem; }
+</style>
 
 <!--
-~1 min. Two messages: the surface is deliberately tiny (lean = cheap = controllable),
-and nothing runs unbounded — cost is the primary cap, the rest are backstops.
-Spoken metaphor: "think of it as an intern with a corporate card — and a hard limit."
-On the MCP line, say: "MCP — Model Context Protocol, the open standard for describing
-the tools an agent can call."
-"An enterprise can't sign off on 'the AI will probably stop'. It signs off on a hard $0.80 ceiling."
+~1 min. Two things, and the title says both. The loop: read the page, the model picks one of
+six tools, the browser acts, repeat until done. Six tools is the whole surface — deliberately
+tiny, so it's cheap and controllable. [click] And every run is sealed inside four hard
+ceilings — steps, time, tokens, cost — checked before each step. Hit one and it stops cleanly
+with a full trace. An enterprise signs off on a $0.80 cap, not "it'll probably stop".
 -->
