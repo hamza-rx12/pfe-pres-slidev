@@ -112,6 +112,6 @@ html.dark .stat-div { background: rgba(255, 255, 255, 0.12); }
 <!--
 ~45 s. Established ESN, Casablanca, ~60 engineers, serving the biggest names in
 Morocco. Two points to land: (1) I sat in the AI unit of the Technical division;
-(2) Orange is a standing client — which is how this migration reached us. Then move
-straight into the migration on the next slide.
+(2) Orange is a standing client — which is how this migration reached us. Next: how
+we worked, then the migration itself.
 -->

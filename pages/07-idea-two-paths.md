@@ -1,4 +1,4 @@
-<div class="kicker">The idea</div>
+<div class="kicker">The idea <span class="op50">· Two paths</span></div>
 
 ## <span class="brag">brag</span> — learn once, replay forever
 

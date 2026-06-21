@@ -1,4 +1,4 @@
-<div class="kicker">Inside brag <span class="op50">· The agent path</span></div>
+<div class="kicker">How it works <span class="op50">· The agent path</span></div>
 
 ## Six tools, four ceilings
 

@@ -44,21 +44,25 @@ src: ./pages/03-roadmap.md
 layout: center
 ---
 
-<SectionDivider :n="1" title="The company" sub="Neo Tech IT" />
+<SectionDivider :n="1" title="The company" sub="Neo Tech IT · the engagement" />
 
 ---
 src: ./pages/03b-company.md
 ---
 
 ---
-layout: center
+src: ./pages/03c-methodology.md
 ---
-
-<SectionDivider :n="2" title="The problem" sub="why RPA hit a wall" />
 
 ---
 src: ./pages/04-context.md
 ---
+
+---
+layout: center
+---
+
+<SectionDivider :n="2" title="The problem" sub="why UiPath had to go" />
 
 ---
 src: ./pages/05-problem.md
@@ -69,14 +73,14 @@ src: ./pages/06-turning-point.md
 ---
 
 ---
-src: ./pages/06b-objectives.md
----
-
----
 layout: center
 ---
 
 <SectionDivider :n="3" title="The idea" sub="learn once, replay forever" />
+
+---
+src: ./pages/06c-idea-journey.md
+---
 
 ---
 src: ./pages/07-idea-two-paths.md
@@ -86,7 +90,7 @@ src: ./pages/07-idea-two-paths.md
 layout: center
 ---
 
-<SectionDivider :n="4" title="Inside brag" sub="perception · budgets · skills" />
+<SectionDivider :n="4" title="How it works" sub="perception · agent · skills" />
 
 ---
 src: ./pages/08-perception.md
@@ -113,13 +117,25 @@ src: ./pages/13-console.md
 ---
 
 ---
+src: ./pages/13b-console-timeline.md
+---
+
+---
+src: ./pages/13c-console-trace.md
+---
+
+---
 layout: center
 ---
 
-<SectionDivider :n="5" title="Results" sub="what works, and what it costs" />
+<SectionDivider :n="5" title="Results" sub="what it does, what it saves" />
 
 ---
 src: ./pages/14-one-task-twice.md
+---
+
+---
+src: ./pages/14b-cost-curve.md
 ---
 
 ---
@@ -131,14 +147,14 @@ src: ./pages/16-estate-scale.md
 ---
 
 ---
+src: ./pages/17-execution.md
+---
+
+---
 layout: center
 ---
 
 <SectionDivider :n="6" title="What's next" sub="limits & roadmap" />
-
----
-src: ./pages/17-execution.md
----
 
 ---
 src: ./pages/18-limits-next.md

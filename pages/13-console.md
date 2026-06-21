@@ -1,26 +1,26 @@
-<div class="kicker">Inside brag <span class="op50">· Observability</span></div>
+<div class="kicker">How it works <span class="op50">· Observability · 1 / 3</span></div>
 
-## Every run, watchable live
+## Every run, at a glance
 
-<div class="grid grid-cols-[1.5fr_1fr] gap-3 mt-3">
-  <img src="../assets/screenshots/dashboard-dark.png" class="shot w-full self-start" alt="brag-ui dashboard" />
-  <div class="flex flex-col gap-3">
-    <img src="../assets/screenshots/send-live-timeline.png" class="shot w-full max-h-36 object-cover object-top" alt="live task timeline" />
-    <img src="../assets/screenshots/skill-detail.png" class="shot w-full max-h-36 object-cover object-top" alt="skill catalogue detail" />
-  </div>
+<div class="mt-3 flex justify-center"
+  v-motion :initial="{ opacity: 0, y: 14 }" :enter="{ opacity: 1, y: 0, transition: { delay: 120, duration: 500 } }">
+  <img src="../assets/screenshots/dashboard-dark.png" class="shot console-shot" alt="brag-ui dashboard" />
 </div>
 
-<div class="flex flex-wrap gap-2 mt-3 justify-center">
-  <span class="chip"><carbon:view /> live SSE timeline per task</span>
-  <span class="chip"><carbon:document /> full trace &amp; cost for any past run</span>
-  <span class="chip"><carbon:close /> one-click skill disable</span>
-  <span class="chip"><carbon:meter /> worker fleet via heartbeats</span>
+<div class="mt-4 flex flex-wrap gap-2 justify-center">
+  <span class="chip">request volume</span>
+  <span class="chip">latency</span>
+  <span class="chip">success rate</span>
+  <span class="chip">model spend</span>
+  <span class="text-xs op55 ml-1">— across the whole worker fleet · <span class="font-mono">brag-ui</span></span>
 </div>
+
+<style scoped>
+.console-shot { max-height: 340px; width: auto; max-width: 90%; }
+</style>
 
 <!--
-~0:40. brag-ui, SvelteKit. "An agent you can't watch is an agent you can't trust in production."
-Dashboard: volume, success rate, latency, spend. Live timeline: every step as it happens.
-Skill catalogue: import/export, one-click disable. The admin token never reaches the
-browser — the console's server proxies everything. Keyed to brag's own concepts:
-skills, budgets, execution paths — not generic logging.
+~0:30. brag-ui, the operator console. "An agent you can't watch is an agent you can't trust
+in production." The dashboard is the front door: volume, latency, success rate, and real
+model spend across every worker — one screen, no database session.
 -->

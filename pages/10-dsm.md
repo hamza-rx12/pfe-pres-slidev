@@ -1,4 +1,4 @@
-<div class="kicker">Inside brag <span class="op50">· Self-extension (DSM)</span></div>
+<div class="kicker">How it works <span class="op50">· Self-extension (DSM)</span></div>
 
 ## After the win, it writes the playbook
 

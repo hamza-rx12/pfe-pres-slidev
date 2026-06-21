@@ -1,4 +1,4 @@
-<div class="kicker">The problem <span class="op50">· The engagement</span></div>
+<div class="kicker">The company <span class="op50">· The engagement</span></div>
 
 ## One layer of a three-layer migration
 
