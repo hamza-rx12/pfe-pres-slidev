@@ -1,52 +1,102 @@
 <div class="kicker">The problem <span class="op50">· The turning point</span></div>
 
-## LLMs changed what's <i>possible</i> — not what's <i>required</i>
+## The technology is ready — a raw agent isn't
 
-<div class="grid grid-cols-2 gap-4 mt-6">
-
-<div v-click class="card-teal flex flex-col justify-center">
-  <div class="flex items-center gap-2 mb-2"><carbon:idea class="text-teal-700 dark:text-teal-300" /><b class="text-teal-800 dark:text-teal-200">Now: reads meaning, not position</b></div>
-  <div class="text-sm op85 leading-relaxed">
-    An LLM finds <b>"the Login button"</b> by what it is — wherever a redesign moved it.
-  </div>
-  <div class="mt-3 text-xs op60">A real browser agent is finally possible.</div>
-</div>
-
-<div v-click class="card-amber">
-  <div class="flex items-center gap-2 mb-3"><carbon:warning-alt class="text-amber-700 dark:text-amber-300" /><b class="text-amber-800 dark:text-amber-200">But on its own, an agent is —</b></div>
-  <div class="grid grid-cols-2 gap-x-5 gap-y-3">
-    <div><div class="flaw">Unpredictable</div><div class="why">a new path every run</div></div>
-    <div><div class="flaw">Expensive</div><div class="why">the model on every click</div></div>
-    <div><div class="flaw">Slow</div><div class="why">a round-trip per action</div></div>
-    <div><div class="flaw">Opaque</div><div class="why">a chat log isn't a trace</div></div>
+<div class="win mt-5" v-motion :initial="{ opacity: 0, y: 10 }" :enter="{ opacity: 1, y: 0, transition: { delay: 150 } }">
+  <div class="win-ic"><carbon:idea /></div>
+  <div class="win-tx">
+    An LLM now reads a page <b>by meaning, not position</b> — "the Login button", wherever it sits.
+    For the first time, an agent can drive a browser from plain English.
   </div>
 </div>
 
+<div v-click>
+  <div class="text-sm op60 mt-6 mb-3 text-center">But on its own, that agent is still —</div>
+  <div class="grid grid-cols-4 gap-3">
+    <div class="fcard">
+      <div class="fic"><carbon:shuffle /></div>
+      <div class="fw">Unpredictable</div>
+      <div class="fy">a different path each run</div>
+    </div>
+    <div class="fcard">
+      <div class="fic"><carbon:currency-dollar /></div>
+      <div class="fw">Expensive</div>
+      <div class="fy">pays the model every click</div>
+    </div>
+    <div class="fcard">
+      <div class="fic"><carbon:time /></div>
+      <div class="fw">Slow</div>
+      <div class="fy">one call per action</div>
+    </div>
+    <div class="fcard">
+      <div class="fic"><carbon:view-off /></div>
+      <div class="fw">Opaque</div>
+      <div class="fy">leaves no audit trail</div>
+    </div>
+  </div>
 </div>
 
-<div v-click class="mt-7 text-center text-xl font-bold leading-snug">
-  An LLM in a browser is a <span class="op60 font-normal">one-day demo</span>.<br />
-  Making it <span class="grad">production-grade</span> is this project.
+<div v-click class="mt-7 text-center text-xl font-bold">
+  Building the demo takes a day. <span class="grad">Making it production-ready is this project.</span>
 </div>
 
 <style scoped>
-.flaw {
-  font-weight: 700;
-  font-size: 1.02rem;
-  color: #b45309;
+.win {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1rem 1.3rem;
+  border-radius: 0.9rem;
+  border: 1px solid rgba(13, 148, 136, 0.4);
+  background: linear-gradient(180deg, rgba(13, 148, 136, 0.09), rgba(13, 148, 136, 0.025));
 }
-html.dark .flaw { color: #fcd34d; }
-.why {
-  font-size: 0.74rem;
-  opacity: 0.62;
-  margin-top: 0.05rem;
+html.dark .win {
+  border-color: rgba(45, 212, 191, 0.4);
+  background: linear-gradient(180deg, rgba(45, 212, 191, 0.12), rgba(45, 212, 191, 0.04));
 }
+.win-ic {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.7rem;
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
+  color: var(--brag-teal);
+  background: rgba(13, 148, 136, 0.12);
+}
+html.dark .win-ic { background: rgba(45, 212, 191, 0.14); }
+.win-tx { font-size: 0.98rem; line-height: 1.45; }
+.fcard {
+  text-align: center;
+  padding: 0.9rem 0.6rem;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(217, 119, 6, 0.3);
+  background: rgba(217, 119, 6, 0.05);
+}
+html.dark .fcard {
+  border-color: rgba(245, 158, 11, 0.3);
+  background: rgba(245, 158, 11, 0.06);
+}
+.fic {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin: 0 auto 0.5rem;
+  border-radius: 0.6rem;
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
+  color: var(--brag-amber);
+  background: rgba(217, 119, 6, 0.1);
+}
+html.dark .fic { background: rgba(245, 158, 11, 0.12); }
+.fw { font-weight: 700; font-size: 1rem; }
+.fy { font-size: 0.72rem; opacity: 0.6; margin-top: 0.15rem; }
 </style>
 
 <!--
-~1 min. The thesis of the defense. Left: the window that just opened — an LLM reads a page
-by meaning, the exact thing RPA couldn't, so a browser agent is finally feasible. Right: but
-raw, it's unpredictable, expensive, slow, and opaque — the four things production won't accept.
-Closing line: anyone can wire an LLM to a browser in a day; closing the gap to production is
-the work.
+~1 min. The thesis of the defense, in three beats. Beat 1 (banner): an LLM finally reads a
+page by meaning — the thing RPA never could — so a browser agent is possible at all. Beat 2
+(click): but raw, it's unpredictable, expensive, slow, and opaque — the four things production
+won't accept. Beat 3 (click): the demo is trivial; closing the gap to production is the work.
 -->
