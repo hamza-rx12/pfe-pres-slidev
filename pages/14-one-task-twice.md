@@ -15,10 +15,10 @@
   </div>
 
   <div class="flex flex-col items-center justify-center px-1">
-    <div v-click="2" class="text-center">
+    <div v-click="2" class="flex flex-col items-center gap-1">
       <carbon:arrow-right class="text-3xl text-amber-500/70" />
-      <div class="chip chip-amber mt-1 mx-auto">skill saved</div>
-      <div class="text-[0.58rem] op50 mt-1 font-mono">propose_skill</div>
+      <div class="chip chip-amber">skill saved</div>
+      <div class="text-[0.58rem] op50 font-mono">propose_skill</div>
     </div>
   </div>
 
