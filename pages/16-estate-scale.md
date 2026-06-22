@@ -3,7 +3,7 @@
 ## From a dollar a run… to a cent
 
 <div class="text-sm op70 mt-1 text-center max-w-3xl mx-auto">
-  On live sites, replay ran <b class="text-teal-700 dark:text-teal-300">×12 cheaper</b> · <b class="text-teal-700 dark:text-teal-300">×4 faster</b> · <b>16 / 16 succeeded</b>. At estate scale, that compounds:
+  On live sites, replay ran <b class="text-teal-700 dark:text-teal-300">×12 cheaper</b> · <b class="text-teal-700 dark:text-teal-300">×4 faster</b> · At estate scale, that compounds:
 </div>
 
 <div class="grid grid-cols-2 gap-5 mt-4 text-center">
@@ -26,10 +26,6 @@
     <div class="card !py-3"><div class="text-xl font-extrabold text-amber-700 dark:text-amber-300">≈ $<VCount :to="13900" separator :duration="1600" :at="2" /></div><div class="text-xs op60 mt-1">worst case: agent on <i>every</i> run → already ÷10</div></div>
     <div class="card !py-3"><div class="text-xl font-extrabold text-teal-700 dark:text-teal-300">≈ $<VCount :to="1500" separator :duration="1600" :at="2" /></div><div class="text-xs op60 mt-1">steady state: 95–98% replay → <b class="whitespace-nowrap">÷50–100</b></div></div>
   </div>
-</div>
-
-<div v-click class="footnote mt-4 text-center">
-  model spend only, projected from measured medians · machines excluded on both sides — but brag's are ordinary replicas, not certified licensed hosts.
 </div>
 
 <!--
