@@ -8,17 +8,14 @@
     <ul class="rlist rlist-amber">
       <li>a heavy redesign costs one re-learn run</li>
       <li>one LLM provider — Anthropic, by choice</li>
-      <li>single tenant — no multi-tenant admin</li>
-      <li>replay verbs: goto · act · extract — no wait / assert</li>
-      <li>numbers preliminary until the full benchmark</li>
+      <li>the operator console isn't authenticated yet</li>
     </ul>
   </div>
   <div v-click>
     <div class="col-head head-teal"><carbon:arrow-right /> What's next</div>
     <ul class="rlist rlist-teal">
-      <li>operator retry workflow — the data's already in Postgres</li>
       <li>real cluster deploy — Helm · Argo CD · Terraform</li>
-      <li>the p50 / p95 benchmark on a fixed task set</li>
+      <li>authentication for the operator console</li>
     </ul>
     <div class="later">later — provider abstraction · OpenTelemetry · multi-tenant · demo-to-skill</div>
   </div>
