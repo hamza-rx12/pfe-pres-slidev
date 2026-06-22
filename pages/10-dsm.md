@@ -32,9 +32,9 @@
 </div>
 
 <div class="flex flex-wrap gap-2 mt-4 justify-center">
-  <span v-click class="chip chip-teal"><carbon:bot /> the agent writes it — no human</span>
-  <span v-click class="chip chip-teal"><carbon:checkmark /> schema-checked before it's saved</span>
-  <span v-click class="chip chip-teal"><carbon:document /> data, not code — portable &amp; reviewable</span>
+  <span v-click class="chip chip-teal"><carbon:bot /> agent-written, schema-checked</span>
+  <span v-click class="chip chip-teal"><carbon:document /> data, not code — versioned &amp; reviewable</span>
+  <span v-click class="chip chip-teal"><carbon:document-export /> MCP-shaped · import / export anywhere</span>
 </div>
 
 <!--

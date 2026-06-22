@@ -2,13 +2,17 @@
 
 ## From a dollar a run… to a cent
 
-<div class="grid grid-cols-2 gap-5 mt-6 text-center">
-  <div class="card-amber !py-6">
+<div class="text-sm op70 mt-1 text-center max-w-3xl mx-auto">
+  On live sites, replay ran <b class="text-teal-700 dark:text-teal-300">×12 cheaper</b> · <b class="text-teal-700 dark:text-teal-300">×4 faster</b> · <b>16 / 16 succeeded</b>. At estate scale, that compounds:
+</div>
+
+<div class="grid grid-cols-2 gap-5 mt-4 text-center">
+  <div class="card-amber !py-5">
     <div class="text-sm op70 mb-1">today — UiPath licensing, per run</div>
     <div class="stat-big text-amber-700 dark:text-amber-300">≈ $1</div>
     <div class="text-xs op60 mt-2">8 robots + orchestrator · $120–180k / yr — paid busy or idle</div>
   </div>
-  <div v-click class="card-teal !py-6">
+  <div v-click class="card-teal !py-5">
     <div class="text-sm op70 mb-1"><span class="brag">brag</span> — replayed run, model spend</div>
     <div class="stat-big text-teal-700 dark:text-teal-300">≈ 1¢</div>
     <div class="text-xs op60 mt-2">pay per run, not per machine — cost follows use</div>

@@ -42,7 +42,7 @@
 </div>
 
 <div class="mt-8 text-center text-sm op75" v-click>
-  App Layer — <b class="text-amber-600 dark:text-amber-400">owned end-to-end</b>, architecture to prototype · Feb → Jul 2026
+  App Layer — <b class="text-amber-600 dark:text-amber-400">owned end-to-end</b>, architecture to prototype · two-week Scrum sprints · Feb → Jul 2026
 </div>
 
 <style scoped>

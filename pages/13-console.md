@@ -1,4 +1,4 @@
-<div class="kicker">How it works <span class="op50">· Observability · 1 / 3</span></div>
+<div class="kicker">How it works <span class="op50">· Observability</span></div>
 
 ## Every run, at a glance
 
@@ -8,7 +8,7 @@
 </div>
 
 <div class="mt-4 text-center text-sm op70">
-  Volume, latency, success rate, and <b>real model spend</b> — the whole worker fleet on one screen.
+  Volume, latency, success rate, and <b>real model spend</b> — plus a <b>live timeline</b> for any running task and the <b>full trace &amp; cost</b> of every past run.
 </div>
 
 <style scoped>

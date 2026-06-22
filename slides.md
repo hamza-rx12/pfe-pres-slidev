@@ -3,7 +3,7 @@
 #  PFE defense — brag: from RPA robots to autonomous browser agents
 #  Alaoui Mhamdi Hamza · ENSAH · 2025/2026
 #
-#  One slide per file under ./pages — edit there.
+#  SHORT CUT (~20 slides). One slide per file under ./pages — edit there.
 #  Section divider slides are inline below (SectionDivider component).
 #  Palette: amber = agent path · teal = replay path.
 # ============================================================
@@ -51,10 +51,6 @@ src: ./pages/03b-company.md
 ---
 
 ---
-src: ./pages/03c-methodology.md
----
-
----
 src: ./pages/04-context.md
 ---
 
@@ -84,10 +80,6 @@ src: ./pages/06c-idea-journey.md
 
 ---
 src: ./pages/07-idea-two-paths.md
----
-
----
-src: ./pages/07b-dsm-format.md
 ---
 
 ---
@@ -121,14 +113,6 @@ src: ./pages/13-console.md
 ---
 
 ---
-src: ./pages/13b-console-timeline.md
----
-
----
-src: ./pages/13c-console-trace.md
----
-
----
 layout: center
 ---
 
@@ -143,15 +127,7 @@ src: ./pages/14b-cost-curve.md
 ---
 
 ---
-src: ./pages/15-results.md
----
-
----
 src: ./pages/16-estate-scale.md
----
-
----
-src: ./pages/17-execution.md
 ---
 
 ---
