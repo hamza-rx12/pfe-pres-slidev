@@ -113,6 +113,14 @@ src: ./pages/13-console.md
 ---
 
 ---
+src: ./pages/13b-console-timeline.md
+---
+
+---
+src: ./pages/13c-console-trace.md
+---
+
+---
 layout: center
 ---
 
