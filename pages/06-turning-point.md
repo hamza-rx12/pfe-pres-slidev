@@ -12,7 +12,7 @@
 
 <div v-click>
   <div class="text-sm op60 mt-6 mb-3 text-center">But on its own, that agent is still —</div>
-  <div class="grid grid-cols-4 gap-3">
+  <div class="grid grid-cols-3 gap-3">
     <div class="fcard">
       <div class="fic"><carbon:shuffle /></div>
       <div class="fw">Unpredictable</div>
@@ -27,11 +27,6 @@
       <div class="fic"><carbon:time /></div>
       <div class="fw">Slow</div>
       <div class="fy">one call per action</div>
-    </div>
-    <div class="fcard">
-      <div class="fic"><carbon:view-off /></div>
-      <div class="fw">Opaque</div>
-      <div class="fy">leaves no audit trail</div>
     </div>
   </div>
 </div>
@@ -97,6 +92,6 @@ html.dark .fic { background: rgba(245, 158, 11, 0.12); }
 <!--
 ~1 min. The thesis of the defense, in three beats. Beat 1 (banner): an LLM finally reads a
 page by meaning — the thing RPA never could — so a browser agent is possible at all. Beat 2
-(click): but raw, it's unpredictable, expensive, slow, and opaque — the four things production
-won't accept. Beat 3 (click): the demo is trivial; closing the gap to production is the work.
+(click): but raw, it's unpredictable, expensive, and slow — what production won't accept.
+Beat 3 (click): the demo is trivial; closing the gap to production is the work.
 -->
