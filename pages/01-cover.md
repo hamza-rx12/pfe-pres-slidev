@@ -2,12 +2,12 @@
 
 <!-- institutional header -->
 <div class="flex items-center justify-between gap-5" v-motion :initial="{ opacity: 0, y: -6 }" :enter="{ opacity: 1, y: 0 }">
-  <img src="../assets/logos/school.png" class="h-12 logo-chip shrink-0" alt="ENSAH" />
+  <img src="../assets/logos/school.png" class="h-16 shrink-0" alt="ENSAH" />
   <div class="text-center leading-tight">
     <div class="text-[0.98rem] font-bold tracking-wide">Abdelmalek Essaâdi University</div>
     <div class="text-[0.84rem] font-bold op90 mt-0.5">National School of Applied Sciences of Al-Hoceima — ENSAH</div>
   </div>
-  <img src="../assets/logos/uae.png" class="h-12 logo-chip shrink-0" alt="Abdelmalek Essaâdi University" />
+  <img src="../assets/logos/uae.png" class="h-18 shrink-0" alt="Abdelmalek Essaâdi University" />
 </div>
 <div class="header-rule mt-2"></div>
 

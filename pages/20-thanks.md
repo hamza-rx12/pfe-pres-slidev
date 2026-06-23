@@ -19,7 +19,7 @@ transition: fade
     <div class="font-semibold tracking-tight">Alaoui Mhamdi Hamza</div>
     <div class="text-xs op55 mt-1">ENSAH · Data Engineering &nbsp;—&nbsp; Neo Tech IT</div>
     <div class="logos mt-4">
-      <img src="../assets/logos/school.png" class="h-7 logo-chip" alt="ENSAH" />
+      <img src="../assets/logos/school.png" class="h-10" alt="ENSAH" />
       <img src="../assets/logos/company.png" class="h-6 dark:hidden" alt="Neo Tech IT" />
       <img src="../assets/logos/logo_neotechit_white.svg" class="h-5 hidden dark:inline-block" alt="Neo Tech IT" />
     </div>
