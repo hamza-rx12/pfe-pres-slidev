@@ -5,8 +5,8 @@ import { useSlideContext } from '@slidev/client'
 // The agent's reasoning loop — three steps, clockwise from the top.
 const steps = [
   { key: 'read', title: 'read the page', icon: 'i-carbon-view', angle: -90 },
-  { key: 'pick', title: 'model picks a tool', icon: 'i-carbon-branch', angle: 30 },
-  { key: 'act', title: 'browser acts', icon: 'i-carbon-cursor-1', angle: 150 },
+  { key: 'pick', title: 'pick a tool', icon: 'i-carbon-branch', angle: 30 },
+  { key: 'act', title: 'act in browser', icon: 'i-carbon-cursor-1', angle: 150 },
 ]
 
 const cx = 50, cy = 50, r = 37
