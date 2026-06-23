@@ -1,4 +1,4 @@
-<div class="kicker">How it works <span class="op50">· Observability · 3 / 3</span></div>
+<div class="kicker">How it works <span class="op50">· Observability · 3 / 4</span></div>
 
 ## Every run, fully traced
 

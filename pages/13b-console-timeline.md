@@ -1,4 +1,4 @@
-<div class="kicker">How it works <span class="op50">· Observability · 2 / 3</span></div>
+<div class="kicker">How it works <span class="op50">· Observability · 2 / 4</span></div>
 
 ## Watch any task, live
 

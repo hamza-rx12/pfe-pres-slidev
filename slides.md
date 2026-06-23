@@ -121,6 +121,10 @@ src: ./pages/13c-console-trace.md
 ---
 
 ---
+src: ./pages/13a-console-instances.md
+---
+
+---
 layout: center
 ---
 
