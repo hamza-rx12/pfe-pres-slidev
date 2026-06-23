@@ -25,8 +25,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v2
       - run: bun install --frozen-lockfile
-      - name: Build (subpath base + hash routing for Pages)
-        run: bun run build --base /pfe-pres-slidev/ --router-mode hash --out dist
+      - name: Build (subpath base for Pages)
+        run: bun run build --base /pfe-pres-slidev/ --out dist
       - name: SPA fallback + disable Jekyll
         run: |
           cp dist/index.html dist/404.html
