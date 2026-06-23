@@ -6,9 +6,8 @@
   <div v-click>
     <div class="col-head head-amber"><carbon:warning-alt /> What it isn't — yet</div>
     <ul class="rlist rlist-amber">
-      <li>a heavy redesign costs one re-learn run</li>
-      <li>one LLM provider — Anthropic, by choice</li>
-      <li>the operator console isn't authenticated yet</li>
+      <li>not multi-provider — Anthropic only, by choice</li>
+      <li>not authenticated — the console has no login yet</li>
     </ul>
   </div>
   <div v-click>
@@ -17,9 +16,10 @@
       <li>real cluster deploy — Helm · Argo CD · Terraform</li>
       <li>authentication for the operator console</li>
     </ul>
-    <div class="later">later — provider abstraction · OpenTelemetry · multi-tenant · demo-to-skill</div>
   </div>
 </div>
+
+<div v-click class="later">later — provider abstraction · OpenTelemetry · multi-tenant · demo-to-skill</div>
 
 <style scoped>
 .col-head {
@@ -63,9 +63,10 @@ html.dark .head-teal { color: #5eead4; }
 .later {
   font-size: 0.76rem;
   opacity: 0.58;
-  margin-top: 0.8rem;
-  padding-top: 0.65rem;
+  margin-top: 1.8rem;
+  padding-top: 0.7rem;
   border-top: 1px solid rgba(20, 40, 90, 0.1);
+  text-align: center;
 }
 html.dark .later { border-color: rgba(255, 255, 255, 0.1); }
 </style>

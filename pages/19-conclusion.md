@@ -1,69 +1,65 @@
 <div class="kicker">What's next <span class="op50">· In closing</span></div>
 
-## What this work shows
+## It comes down to one idea
 
-<div class="mt-6 flex flex-col gap-3 max-w-3xl mx-auto">
-  <div v-click class="ccard">
-    <div class="cnum">1</div>
-    <div>
-      <div class="ch">The gap can be engineered closed</div>
-      <div class="cs">budgets, schemas, traces, stateless replicas — not a research demo</div>
+<div class="handoff max-w-2xl mx-auto mt-12">
+  <div class="hrow">
+    <div class="hlabel">
+      <div class="htag text-amber-700 dark:text-amber-300">the agent</div>
+      <div class="hword">adaptability</div>
+    </div>
+    <div></div>
+    <div class="hlabel">
+      <div class="htag text-teal-700 dark:text-teal-300">the robot</div>
+      <div class="hword">price · repeatability</div>
     </div>
   </div>
-  <div v-click class="ccard">
-    <div class="cnum">2</div>
-    <div>
-      <div class="ch">Cheap and deterministic — yet adaptive</div>
-      <div class="cs">the two paths reconcile them, and it improves itself with use</div>
-    </div>
-  </div>
-  <div v-click class="ccard">
-    <div class="cnum">3</div>
-    <div>
-      <div class="ch">It shipped, end to end</div>
-      <div class="cs">by mid-engagement, on live sites, instrumented for proof</div>
-    </div>
-  </div>
+  <svg class="merge" viewBox="0 0 100 34" preserveAspectRatio="none" aria-hidden="true"><line x1="21" y1="1" x2="50" y2="33" /><line x1="79" y1="1" x2="50" y2="33" /></svg>
+  <div class="bragwrap"><span class="bragnode">brag</span></div>
+  <div class="hsub">learn a task once, then replay it forever</div>
 </div>
 
-<div v-click class="mt-7 text-center text-lg op85">
-  The model is a tenth of the system.<br />
-  <b class="grad">The other nine tenths are engineering — and that's what I'm defending today.</b>
-</div>
+<div v-click class="text-center mt-10 text-2xl"><b class="grad">You don't have to choose between them.</b></div>
 
 <style scoped>
-.ccard {
-  display: flex;
-  align-items: center;
-  gap: 0.9rem;
-  padding: 0.8rem 1.1rem;
-  border-radius: 0.8rem;
-  border: 1px solid rgba(20, 40, 90, 0.12);
-  background: rgba(255, 255, 255, 0.5);
-}
-html.dark .ccard {
-  border-color: rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.04);
-}
-.cnum {
-  flex-shrink: 0;
-  width: 1.7rem;
-  height: 1.7rem;
-  border-radius: 50%;
+.hrow {
   display: grid;
-  place-items: center;
-  font-family: var(--slidev-code-font-family, monospace);
-  font-weight: 800;
-  font-size: 0.85rem;
-  color: #fff;
-  background: var(--brag-teal);
+  grid-template-columns: 5fr 2fr 5fr;
+  align-items: end;
 }
-.ch { font-weight: 700; font-size: 1.05rem; line-height: 1.15; }
-.cs { font-size: 0.82rem; opacity: 0.65; margin-top: 0.1rem; }
+.hlabel { text-align: center; line-height: 1.15; }
+.htag {
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.hword { font-size: 1.05rem; font-weight: 700; margin-top: 0.15rem; }
+.merge { width: 100%; height: 64px; display: block; }
+.merge line { stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+.merge line:first-of-type { stroke: var(--brag-amber); }
+.merge line:last-of-type { stroke: var(--brag-teal); }
+.bragwrap { text-align: center; margin-top: -0.4rem; }
+.bragnode {
+  display: inline-block;
+  padding: 0.34rem 1.4rem;
+  border-radius: 0.65rem;
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: #fff;
+  background: linear-gradient(90deg, var(--brag-amber), var(--brag-teal));
+  box-shadow: 0 5px 16px -6px rgba(0, 0, 0, 0.3);
+}
+.hsub {
+  text-align: center;
+  font-size: 0.95rem;
+  opacity: 0.72;
+  margin-top: 0.75rem;
+}
 </style>
 
 <!--
-~1 min. Slow, deliberate. Three claims, then the personal line. Also a career statement:
-LLM reasoning plus deterministic execution under production constraints — that's the
-intersection where I want to work.
+~45s. The closing thought, plain. An AI agent handles anything new; a robot is cheap and runs
+the same way every time. brag joins them — the agent learns a task once, then a deterministic
+replay repeats it forever. You don't have to choose between flexible and cheap; you get both.
 -->
